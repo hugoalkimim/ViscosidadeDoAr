@@ -33,29 +33,49 @@
 					\centering
 					\includegraphics[scale=0.6]{./img/viscosidade.png}
 				\end{figure}
-				$$\frac{F}{A} = \eta \dfrac{dv_x}{dy}$$
+				\begin{equation}
+					\frac{F}{A} = \eta \dfrac{dv_x}{dy}
+				\end{equation}
 				em que $F$ é a força aplicada, $A$ é a área em $y$ e $z$, e $\dfrac{dv_x}{dy}$ é a derivada espacial da velocidade. No Sistema Internacional, a viscosidade possui \textit{pascal-segundo} [$Pa \cdot s$] como unidade de medida.
 				\par Além disso, quando estudamos a mecânica de fluidos, devemos sempre considerar o número de Reynolds, um coeficiente adimensional utilizado para o cálculo do regime de escoamento de um fluido sobre uma superfície. Esse coeficiente é dado por:
-				$$Re = \frac{\rho v l}{\eta}$$
+				\begin{equation}
+					Re = \frac{\rho v l}{\eta}
+				\end{equation}
 				em que $\rho$ é a densidade do fluido e $l$ é a dimensão linear característica do objeto oscilante (para uma esfera, $l = 2 r$, em que $r$ é o raio).
 				\par Finalmente, quando analizamos oscilações harmônicas simples no mundo real, precisamos considerar a energia dissipada devido à força de atrito. Para pequenos números de Reynolds, a força de atrito na esfera é dada pela Lei de Stoke:
-				$$F = 6 \pi r \eta v$$
+				\begin{equation}
+					F = 6 \pi r \eta v
+				\end{equation}
 				\par Nesse caso, a equação do movimento para uma esfera com massa $m$ e uma mola com constante elástica $k$ é dada por
-				$$\ddot{x} + 2 \gamma \dot{x} + \omega_0^2 x = 0$$
+				\begin{equation}
+					\ddot{x} + 2 \gamma \dot{x} + \omega_0^2 x = 0
+				\end{equation}
 				em que as constantes são dadas por
-					$$\omega_0^2 = \frac{k}{m} \qquad \gamma = \frac{3 \pi \eta r}{m}$$
+				\begin{equation}
+					\omega_0^2 = \frac{k}{m} \qquad \gamma = \frac{3 \pi \eta r}{m}
+				\end{equation}
 				\par Portanto, quando $\omega_0 > \gamma$ (caso de sub-amortecimento), a solução é
-					$$x = A \, e^{- \gamma t} \, \cos (\omega t + \phi)$$
+				\begin{equation}
+					x = A \, e^{- \gamma t} \, \cos (\omega t + \phi)
+				\end{equation}
 				em que $A$, $\phi$ e $\omega$ são, respectivamente, a amplitude, a fase, e a frequência da oscilação.
 				\par Contudo, quando os números de Reynolds não são pequenos, podemos usar a equação desenvolvida por Landau e Lifshitz:
-				$$F = 6 \pi \eta r \left(1 + \frac{r}{\delta} \right) v + 3 \pi r^2 \left( 1 + \frac{2 r}{9 \delta} \right) \rho \delta \dfrac{d v}{d t}$$
+				\begin{equation}
+					F = 6 \pi \eta r \left(1 + \frac{r}{\delta} \right) v + 3 \pi r^2 \left( 1 + \frac{2 r}{9 \delta} \right) \rho \delta \dfrac{d v}{d t}
+				\end{equation}
 				em que $\delta$ a profundidade de penetração dentro do fluido ao redor do objeto oscilante, que é dada por
-				$$\delta = \sqrt{\frac{2 \eta}{\rho \omega}}$$
+				\begin{equation}
+					\delta = \sqrt{\frac{2 \eta}{\rho \omega}}
+				\end{equation}
 				\par Quando resolvemos essa equação, encontramos uma solução análoga à anterior:
-					$$x = A \, e^{- \gamma t} \, \cos (\omega t + \phi)$$
+				\begin{equation}
+					x = A \, e^{- \gamma t} \, \cos (\omega t + \phi)
+				\end{equation}
 				\par Todavia, agora as constantes são determinadas por
-					$$\gamma = \frac{3 \pi \eta r \left(1+ \frac{r}{\delta} \right)}{f_1 \left[ f_2 3 \pi r^2 \left(1+\frac{2 r}{9 \delta} \right) \rho \delta + m \right]}$$
-					$$\omega_0^2 = \frac{k}{f_2 3 \pi r^2 \left(1 + \frac{2 r}{9 \delta} \right) + m}$$
+				\begin{equation} \begin{split}
+					\omega_0^2 = \frac{k}{f_2 3 \pi r^2 \left(1 + \frac{2 r}{9 \delta} \right) + m} \\
+					\gamma = \frac{3 \pi \eta r \left(1+ \frac{r}{\delta} \right)}{f_1 \left[ f_2 3 \pi r^2 \left(1+\frac{2 r}{9 \delta} \right) \rho \delta + m \right]}
+				\end{split} \end{equation}
 				em que $f_1$ e $f_2$ são coeficientes semi-empíricos.
 				
 		\item \textbf{Experimento}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.18)  20 AUG 2020 17:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.18)  20 AUG 2020 17:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -351,15 +351,15 @@ Package pdftex.def Info: ./img/viscosidade.png  used on input line 34.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./img/viscosidade.png>]
-<./img/1a.jpg, id=20, 1798.72pt x 2754.29pt>
-File: ./img/1a.jpg Graphic file (type jpg)
-<use ./img/1a.jpg>
-Package pdftex.def Info: ./img/1a.jpg  used on input line 88.
+<./img/bolaTenis.jpg, id=20, 1798.72pt x 2754.29pt>
+File: ./img/bolaTenis.jpg Graphic file (type jpg)
+<use ./img/bolaTenis.jpg>
+Package pdftex.def Info: ./img/bolaTenis.jpg  used on input line 88.
 (pdftex.def)             Requested size: 161.8778pt x 247.8754pt.
-<./img/1b.png, id=21, 516.42938pt x 722.7pt>
-File: ./img/1b.png Graphic file (type png)
-<use ./img/1b.png>
-Package pdftex.def Info: ./img/1b.png  used on input line 94.
+<./img/bolaMetal.png, id=21, 516.42938pt x 722.7pt>
+File: ./img/bolaMetal.png Graphic file (type png)
+<use ./img/bolaMetal.png>
+Package pdftex.def Info: ./img/bolaMetal.png  used on input line 94.
 (pdftex.def)             Requested size: 154.93001pt x 216.81166pt.
 <./img/quadros.png, id=22, 500.87125pt x 412.54124pt>
 File: ./img/quadros.png Graphic file (type png)
@@ -370,11 +370,11 @@ Package pdftex.def Info: ./img/quadros.png  used on input line 106.
 Overfull \vbox (129.27205pt too high) has occurred while \output is active []
 
 
-[2 <./img/1a.jpg> <./img/1b.png>] [3 <./img/quadros.png>]
+[2 <./img/bolaTenis.jpg> <./img/bolaMetal.png>] [3 <./img/quadros.png>]
 (./ViscosidadeDoAr.aux) ) 
 Here is how much of TeX's memory you used:
  4197 strings out of 481239
- 61259 string characters out of 5920377
+ 61343 string characters out of 5920377
  317360 words of memory out of 5000000
  19425 multiletter control sequences out of 15000+600000
  540058 words of font info for 56 fonts, out of 8000000 for 9000
@@ -391,7 +391,7 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmti12.pfb>
-Output written on ViscosidadeDoAr.pdf (3 pages, 2245404 bytes).
+Output written on ViscosidadeDoAr.pdf (3 pages, 2245407 bytes).
 PDF statistics:
  65 PDF objects out of 1000 (max. 8388607)
  42 compressed objects within 1 object stream

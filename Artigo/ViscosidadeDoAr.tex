@@ -5,8 +5,20 @@
 \usepackage{float}
 \usepackage{amsmath, amsfonts, amssymb, esint}
 \usepackage{multicol}
+\usepackage{titlesec}
+\usepackage{hyperref}
 
 \pagenumbering{Roman}
+
+\titleformat{\section}{\normalfont\bfseries}{\thesection.}{0.5em}{}
+
+\hypersetup
+{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
 
 \begin{document}
 	\begin{center}
@@ -19,17 +31,17 @@
 		\textit{Iago Braz Mendes, Hugo Danilo Santos Alkimim, Gabriel Oliveira Mota, e Marcos Aurélio Duarte Carvalho}
 	\end{center}
 
-	\textbf{Resumo}
-		\setlength{\parindent}{4ex}
-		\par Neste artigo, explora-se um arranjo experimental de um oscilador massa-mola para investigar a oscilação harmônica amortecida. A determinação da amplitude da oscilação como uma função temporal foi determinada precisa e economicamente, utilizando vídeos obtidos por meio de um celular, a ferramenta \textit{Tracker -- Video Analysis and Modeling Tool for Physics Education --} e algoritmos em \textit{MATLAB}. Assim, foi possível determinar o coeficiente de amortecimento, que foi usado para encontrar a viscosidade do ar.
+	\section*{Resumo}
+		Neste artigo, explora-se um arranjo experimental de um oscilador massa-mola para investigar a oscilação harmônica amortecida. A determinação da amplitude da oscilação como uma função temporal foi determinada precisa e economicamente, utilizando vídeos obtidos por meio de um celular, a ferramenta \textit{Tracker -- Video Analysis and Modeling Tool for Physics Education --} e algoritmos em \textit{MATLAB}. Assim, foi possível determinar o coeficiente de amortecimento, que foi usado para encontrar a viscosidade do ar.
 	
-	\begin{multicols}{2} \begin{enumerate}
+	\begin{multicols}{2}
 		\setlength{\parindent}{4ex}
-		\item \textbf{Introdução}
-			\par A teoria acerca de sistemas oscilatórios amortecidos é aprofundada por alguns artigos [\textit{referência(s)}]. Contudo, é comum encontrar discrepâncias entre as previsões e os resultados obtidos em laboratórios. Nesse sentido, este artigo apresenta um modelo experimental de fácil implementação para determinar a viscosidade do ar a partir de uma oscilação massa-mola amortecida. Com os dados coletados, fazemos 3 análises a fim de encontrar qual método mais se aproxima da realidade.
-			\par Na seção 2, a parte teórica sobre viscosidade e oscilações amortecidas é rapidamente exposta. Na seção 3, o modelo experimental usado para obter dados é explicado. Na seção 4, a análise de dados e seus resultados são discutidos, abrangendo 3 métodos distintos. Por fim, as conclusões são apresentadas na seção 5.
+		\section{Introdução}
+			A teoria acerca de sistemas oscilatórios amortecidos é aprofundada por alguns artigos [\textit{referência(s)}]. Contudo, é comum encontrar discrepâncias entre as previsões e os resultados obtidos em laboratórios. Nesse sentido, este artigo apresenta um modelo experimental de fácil implementação para determinar a viscosidade do ar a partir de uma oscilação massa-mola amortecida. Com os dados coletados, fazemos 3 análises a fim de encontrar qual método mais se aproxima da realidade.
+			\par Na seção \hyperref[sec:teoria]{\ref{sec:teoria}}, a parte teórica sobre viscosidade e oscilações amortecidas é rapidamente exposta. Na seção \hyperref[sec:experimento]{\ref{sec:experimento}}, o modelo experimental usado para obter dados é explicado. Na seção \hyperref[sec:analise]{\ref{sec:analise}}, a análise de dados e seus resultados são discutidos, abrangendo 3 métodos distintos. Por fim, as conclusões são apresentadas na seção \hyperref[sec:conclusao]{\ref{sec:conclusao}}.
 			
-		\item \textbf{Teoria}
+		\section{Teoria}
+		\label{sec:teoria}
 			\par Em primeira instância, viscosidade ($\eta$) é a propriedade física que descreve a resistência de um fluido para escoar, que é geralmente expressa usando a Lei de Newton da Viscosidade:
 			\begin{figure}[H]
 				\centering
@@ -80,7 +92,8 @@
 			\end{split} \end{equation}
 			em que $f_1$ e $f_2$ são coeficientes semi-empíricos.
 			
-		\item \textbf{Experimento}
+		\section{Experimento}
+		\label{sec:experimento}
 			\par A configuração experimental é simples e pode ser facilmente repetida (figuras 1 e 2). Ela consiste de uma bola com uma massa conhecida, uma mola, um suporte com uma escala de comprimento, um dispositivo para gravar partes da oscilação, um suporte para o dispositivo, e um cronômetro que nos dá o tempo real no vídeo em câmera lenta gerado.
 			\par Inicialmente, nós fizemos o experimento usando uma bola de tênis e filmando toda a oscilação (figura 1). Depois de fazermos a análise de dados dessa configuração, decidimos que seria melhor usar uma bola mais lisa, pois se adequaria melhor aos modelos matmáticos utilizados, que consideram uma esfera sem rugosidades. Além disso, optamos por gravar trechos mais curtos, a fim de obtermos vários vídeos para serem analisados separadamente, facilitando o procedimento.
 			\par Portanto, nós fizemos um segundo experimento usando uma bola de metal (figura 2) e filmando entre 5 e 10 segundos em intervalos de 1 minuto.
@@ -97,7 +110,8 @@
 				\caption{\textbf{Figura 2:} Experimento com bola de metal.}
 			\end{figure}
 			
-		\item \textbf{Análise de Dados}
+		\section{Análise de Dados}
+		\label{sec:analise}
 			\par Com os dados da última configuração, fizemos duas análises para determinar o valor da viscosidade do ar: uma utilizando a maior amplitude de cada vídeo curto e outra fazendo a média aritmética das amplitudes máxima e mínima em cada vídeo.
 			\par No primeiro método, analisamos cada gravação -- quadro a quadro --, com o auxílio de um editor de vídeo (figura 3), para encontrar a maior amplitude atingida e o correspondente tempo no cronômetro em tela. Com isso, conseguimos encontrar o valor da viscosidade do ar como $2.78 \cdot 10^{-5} \, Pa \cdot s$ (ignorando as incertezas). Apesar de esse método ter sido efetivo, ele poderia ser mais preciso, motivo pelo qual fizemos a segunda análise.
 			\par No segundo método, usamos o programa \textit{Tracker -- video analysis and modelling tool --} para conseguir mais posições em cada vídeo e depois calcular a média aritmética das amplitudes máxima e mínima atingidas nesse intervalo. Como consequência dessa nova análise, conseguimos determinar o valor da viscosidade do ar como $2.02 \cdot 10^{-5} \, Pa \cdot s$ (ignorando a incerteza novamente).
@@ -108,9 +122,10 @@
 				\caption{\textbf{Figura 3:} Análise da gravação quadro a quadro.}
 			\end{figure}
 			
-		\item \textbf{Conclusão}
+		\section{Conclusão}
+		\label{sec:conclusao}
 		
-		\item \textbf{Referências}
+		\section{Referências}
 		
-	\end{enumerate} \end{multicols}
+	\end{multicols}
 \end{document}

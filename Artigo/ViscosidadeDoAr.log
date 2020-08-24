@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.24)  24 AUG 2020 20:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.24)  24 AUG 2020 20:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -376,7 +376,10 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip56
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 21.
+(/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 22.
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
@@ -386,22 +389,22 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 (./ViscosidadeDoAr.aux)
 \openout1 = `ViscosidadeDoAr.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -473,7 +476,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-Package hyperref Info: Link coloring ON on input line 23.
+Package hyperref Info: Link coloring ON on input line 24.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -486,28 +489,33 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count287
 )
-LaTeX Info: Redefining \ref on input line 23.
-LaTeX Info: Redefining \pageref on input line 23.
-LaTeX Info: Redefining \nameref on input line 23.
+LaTeX Info: Redefining \ref on input line 24.
+LaTeX Info: Redefining \pageref on input line 24.
+LaTeX Info: Redefining \nameref on input line 24.
 
 (./ViscosidadeDoAr.out) (./ViscosidadeDoAr.out)
 \@outlinefile=\write3
 \openout3 = `ViscosidadeDoAr.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 45.
 
+Underfull \hbox (badness 5563) in paragraph at lines 41--42
+\OT1/cmr/m/n/12 ci-dos ^^Se apro-fun-dada por al-guns ar-ti-gos [\OT1/cmr/m/it/
+12 re-
+ []
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 46.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 45.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+esint on input line 4
-5.
+6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
@@ -515,10 +523,10 @@ File: uesint.fd
 <./img/viscosidade.png, id=36, 363.3575pt x 169.63374pt>
 File: ./img/viscosidade.png Graphic file (type png)
 <use ./img/viscosidade.png>
-Package pdftex.def Info: ./img/viscosidade.png  used on input line 48.
+Package pdftex.def Info: ./img/viscosidade.png  used on input line 49.
 (pdftex.def)             Requested size: 218.01617pt x 101.78102pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--60
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
 []\OT1/cmr/m/n/12 Finalmente, quando anal-izamos os-cila^^Xc~oes
  []
 
@@ -528,39 +536,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--60
 <./img/bolaTenis.jpg, id=63, 1798.72pt x 2754.29pt>
 File: ./img/bolaTenis.jpg Graphic file (type jpg)
 <use ./img/bolaTenis.jpg>
-Package pdftex.def Info: ./img/bolaTenis.jpg  used on input line 103.
+Package pdftex.def Info: ./img/bolaTenis.jpg  used on input line 104.
 (pdftex.def)             Requested size: 161.8778pt x 247.8754pt.
 <./img/bolaMetal.png, id=64, 516.42938pt x 722.7pt>
 File: ./img/bolaMetal.png Graphic file (type png)
 <use ./img/bolaMetal.png>
-Package pdftex.def Info: ./img/bolaMetal.png  used on input line 109.
+Package pdftex.def Info: ./img/bolaMetal.png  used on input line 110.
 (pdftex.def)             Requested size: 154.93001pt x 216.81166pt.
 <./img/quadros.png, id=68, 500.87125pt x 412.54124pt>
 File: ./img/quadros.png Graphic file (type png)
 <use ./img/quadros.png>
-Package pdftex.def Info: ./img/quadros.png  used on input line 122.
+Package pdftex.def Info: ./img/quadros.png  used on input line 123.
 (pdftex.def)             Requested size: 200.34494pt x 165.01357pt.
 
 [2 <./img/bolaTenis.jpg> <./img/bolaMetal.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 133.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
  [3 <./img/quadros.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 133.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 134.
 
 (./ViscosidadeDoAr.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 133.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 133.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 134.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 134.
 Package rerunfilecheck Info: File `ViscosidadeDoAr.out' has not changed.
 (rerunfilecheck)             Checksum: E7DC2F853D4383AA8B2C65FECAD74347;288.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 133.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 134.
  ) 
 Here is how much of TeX's memory you used:
- 8462 strings out of 483140
- 127764 string characters out of 5965151
- 396972 words of memory out of 5000000
- 23313 multiletter control sequences out of 15000+600000
+ 8469 strings out of 483140
+ 127970 string characters out of 5965151
+ 397084 words of memory out of 5000000
+ 23317 multiletter control sequences out of 15000+600000
  540058 words of font info for 56 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 41i,18n,42p,571b,560s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,18n,42p,571b,558s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
@@ -572,7 +580,7 @@ public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 ti12.pfb>
-Output written on ViscosidadeDoAr.pdf (3 pages, 2250300 bytes).
+Output written on ViscosidadeDoAr.pdf (3 pages, 2250312 bytes).
 PDF statistics:
  127 PDF objects out of 1000 (max. 8388607)
  103 compressed objects within 2 object streams

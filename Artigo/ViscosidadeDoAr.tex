@@ -112,14 +112,32 @@
 			
 		\section{Análise de Dados} \label{sec:analise}
 			\par Com os dados da segunda configuração, fizemos três análises para determinar o valor da viscosidade do ar: utilizando a maior amplitude de cada vídeo curto e fazendo a média aritmética das amplitudes máxima e mínima em cada vídeo.
-			\par No primeiro método, analisamos cada gravação -- quadro a quadro --, com o auxílio de um editor de vídeo (\hyperref[img:quadros]{Figura 3}), para encontrar a maior amplitude atingida e o correspondente tempo no cronômetro em tela. Com isso, conseguimos encontrar o valor da viscosidade do ar como $2.78 \cdot 10^{-5} \, Pa \cdot s$ (ignorando a incerteza). Apesar de esse método ter sido efetivo, ele poderia ser mais preciso, motivo pelo qual fizemos a segunda análise.
-			\par No segundo método, usamos o programa \textit{Tracker -- video analysis and modelling tool --} para conseguir mais posições em cada vídeo e depois calcular a média aritmética das amplitudes máxima e mínima atingidas nesse intervalo. Como consequência dessa nova análise, conseguimos determinar o valor da viscosidade do ar como $2.02 \cdot 10^{-5} \, Pa \cdot s$ (ignorando a incerteza).
-			\par Com os dados da terceira configuração, um algoritmo escrito em MatLab (disponível \href{https://github.com/hugoalkimim/ViscosidadeDoAr/tree/master/Algoritmo}{aqui}) foi utilizado para encontrar os máximos e, consequentemente, encontrar a constante $\gamma$ (equação \hyperref[eq:constantes]{\ref{eq:constantes}}). Com isso, conseguimos determinar o valor da viscosidade do ar como $\#.\#\# \cdot 10^{-5} \, Pa \cdot s$ (ignorando a incerteza).
+			\par No primeiro método, analisamos cada gravação -- quadro a quadro --, com o auxílio de um editor de vídeo (\hyperref[img:quadros]{Figura 3}), para encontrar a maior amplitude atingida e o correspondente tempo no cronômetro em tela. Os dados coletados podem ser vistos na \hyperref[img:m1]{Figura 4}. Com isso, conseguimos encontrar o valor da viscosidade do ar como $2.78 \cdot 10^{-5} \, Pa \cdot s$ (ignorando a incerteza). Apesar de esse método ter sido efetivo, ele poderia ser mais preciso, motivo pelo qual fizemos a segunda análise.
+			\par No segundo método, usamos o programa \textit{Tracker -- video analysis and modelling tool --} para conseguir mais posições em cada vídeo e depois calcular a média aritmética das amplitudes máxima e mínima atingidas nesse intervalo. Os dados coletados podem ser vistos na \hyperref[img:m2]{Figura 5}. Como consequência dessa nova análise, conseguimos determinar o valor da viscosidade do ar como $2.02 \cdot 10^{-5} \, Pa \cdot s$ (ignorando a incerteza).
+			\par Com os dados da terceira configuração, um algoritmo escrito em MatLab (disponível \href{https://github.com/hugoalkimim/ViscosidadeDoAr/tree/master/Algoritmo}{aqui}) foi utilizado para encontrar os máximos e, consequentemente, encontrar a constante $\gamma$ (equação \hyperref[eq:constantes]{\ref{eq:constantes}}). Os dados coletados podem ser vistos na \hyperref[img:m3]{Figura 6}. Com isso, conseguimos determinar o valor da viscosidade do ar como $\#.\#\# \cdot 10^{-5} \, Pa \cdot s$ (ignorando a incerteza).
 			\begin{figure}[H] \label{img:quadros}
 				\centering
 				\includegraphics[scale=0.4]{./img/quadros.png}
 				\captionsetup{labelformat=empty}
 				\caption{\textbf{Figura 3:} Análise da gravação quadro a quadro.}
+			\end{figure}
+			\begin{figure}[H] \label{img:m1}
+				\centering
+				\includegraphics[scale=0.3]{./img/m1.png}
+				\captionsetup{labelformat=empty}
+				\caption{\textbf{Figura 4:} Gráfico com dados do primeiro método.}
+			\end{figure}
+			\begin{figure}[H] \label{img:m2}
+				\centering
+				\includegraphics[scale=0.3]{./img/m2.png}
+				\captionsetup{labelformat=empty}
+				\caption{\textbf{Figura 5:} Gráfico com dados do segundo método.}
+			\end{figure}
+			\begin{figure}[H] \label{img:m3}
+				\centering
+				\includegraphics[scale=0.3]{./img/m3.png}
+				\captionsetup{labelformat=empty}
+				\caption{\textbf{Figura 6:} Gráfico com dados do terceiro método.}
 			\end{figure}
 			
 		\section{Conclusão} \label{sec:conclusao}

@@ -94,16 +94,16 @@
 			
 		\section{Experimento} \label{sec:experimento}
 			\par A configuração experimental é simples e pode ser facilmente repetida. Ela consiste de uma bola com uma massa conhecida, uma mola, um suporte com uma escala de comprimento, um dispositivo para gravar partes da oscilação, um suporte para o dispositivo, e um cronômetro que nos dá o tempo real no vídeo em câmera lenta gerado.
-			\par Inicialmente, nós fizemos o experimento usando uma bola de tênis e filmando toda a oscilação (figura 1). Depois de fazermos a análise de dados dessa configuração, decidimos que seria melhor usar uma bola mais lisa, pois se adequaria melhor aos modelos matmáticos utilizados, que consideram uma esfera sem rugosidades. Além disso, optamos por gravar trechos mais curtos, a fim de obtermos vários vídeos para serem analisados separadamente, facilitando o procedimento.
-			\par Portanto, nós fizemos um segundo experimento usando uma bola de metal (figura 2) e filmando entre 5 e 10 segundos em intervalos de 1 minuto.
+			\par Inicialmente, nós fizemos o experimento usando uma bola de tênis e filmando toda a oscilação (\hyperref[img:tenis]{Figura 1}). Depois de fazermos a análise de dados dessa configuração, decidimos que seria melhor usar uma bola mais lisa, pois se adequaria melhor aos modelos matmáticos utilizados, que consideram uma esfera sem rugosidades. Além disso, optamos por gravar trechos mais curtos, a fim de obtermos vários vídeos para serem analisados separadamente, facilitando o procedimento.
+			\par Portanto, nós fizemos um segundo experimento usando uma bola de metal (figura \hyperref[img:metal]{Figura 2}) e filmando entre 5 e 10 segundos em intervalos de 1 minuto.
 			\par Por fim, uma terceira configuração foi estabelecida, em que o movimento amortecido de uma bola de metal (similar à figura 2) foi gravado num período de 30 minutos sem interrupções.
-			\begin{figure}[H]
+			\begin{figure}[H] \label{img:tenis}
 				\centering
 				\includegraphics[scale=0.09]{./img/bolaTenis.jpg}
 				\captionsetup{labelformat=empty}
 				\caption{\textbf{Figura 1:} Experimento com bola de tênis.}
 			\end{figure}
-			\begin{figure}[H]
+			\begin{figure}[H] \label{img:metal}
 				\centering
 				\includegraphics[scale=0.3]{./img/bolaMetal.png}
 				\captionsetup{labelformat=empty}
@@ -112,10 +112,10 @@
 			
 		\section{Análise de Dados} \label{sec:analise}
 			\par Com os dados da segunda configuração, fizemos três análises para determinar o valor da viscosidade do ar: utilizando a maior amplitude de cada vídeo curto e fazendo a média aritmética das amplitudes máxima e mínima em cada vídeo.
-			\par No primeiro método, analisamos cada gravação -- quadro a quadro --, com o auxílio de um editor de vídeo (figura 3), para encontrar a maior amplitude atingida e o correspondente tempo no cronômetro em tela. Com isso, conseguimos encontrar o valor da viscosidade do ar como $2.78 \cdot 10^{-5} \, Pa \cdot s$ (ignorando a incerteza). Apesar de esse método ter sido efetivo, ele poderia ser mais preciso, motivo pelo qual fizemos a segunda análise.
+			\par No primeiro método, analisamos cada gravação -- quadro a quadro --, com o auxílio de um editor de vídeo (\hyperref[img:quadros]{Figura 3}), para encontrar a maior amplitude atingida e o correspondente tempo no cronômetro em tela. Com isso, conseguimos encontrar o valor da viscosidade do ar como $2.78 \cdot 10^{-5} \, Pa \cdot s$ (ignorando a incerteza). Apesar de esse método ter sido efetivo, ele poderia ser mais preciso, motivo pelo qual fizemos a segunda análise.
 			\par No segundo método, usamos o programa \textit{Tracker -- video analysis and modelling tool --} para conseguir mais posições em cada vídeo e depois calcular a média aritmética das amplitudes máxima e mínima atingidas nesse intervalo. Como consequência dessa nova análise, conseguimos determinar o valor da viscosidade do ar como $2.02 \cdot 10^{-5} \, Pa \cdot s$ (ignorando a incerteza).
 			\par Com os dados da terceira configuração, um algoritmo escrito em MatLab (disponível \href{https://github.com/hugoalkimim/ViscosidadeDoAr/tree/master/Algoritmo}{aqui}) foi utilizado para encontrar os máximos e, consequentemente, encontrar a constante $\gamma$ (equação \hyperref[eq:constantes]{\ref{eq:constantes}}). Com isso, conseguimos determinar o valor da viscosidade do ar como $\#.\#\# \cdot 10^{-5} \, Pa \cdot s$ (ignorando a incerteza).
-			\begin{figure}[H]
+			\begin{figure}[H] \label{img:quadros}
 				\centering
 				\includegraphics[scale=0.4]{./img/quadros.png}
 				\captionsetup{labelformat=empty}

@@ -82,7 +82,7 @@
 				\delta = \sqrt{\frac{2 \eta}{\rho \omega}}
 			\end{equation}
 			\par Quando resolvemos essa equação, encontramos uma solução análoga à anterior:
-			\begin{equation}
+			\begin{equation} \label{eq:posicao}
 				x = A \, e^{- \gamma t} \, \cos (\omega t + \phi)
 			\end{equation}
 			\par Todavia, agora as constantes são determinadas por
@@ -91,6 +91,11 @@
 				\gamma = \frac{3 \pi \eta r \left(1+ \frac{r}{\delta} \right)}{f_1 \left[ f_2 3 \pi r^2 \left(1+\frac{2 r}{9 \delta} \right) \rho \delta + m \right]}
 			\end{split} \end{equation}
 			em que $f_1$ e $f_2$ são coeficientes semi-empíricos.
+			\par Neste artigo, fazemos uso somente dos pontos máximos da oscilação (ou seja, da amplitude). Com isso, a equação \hyperref[eq:posicao]{\ref{eq:posicao}} pode ser reescrita da seguinte forma:
+			\begin{equation}
+				A = A_0 e^{- \gamma t} \quad \therefore \quad \ln A = - \gamma t + \ln A_0
+			\end{equation}
+			em que $A$ é a amplitude em função do tempo e $A_0$ é a amplitude inicial.
 			
 		\section{Experimento} \label{sec:experimento}
 			\par A configuração experimental é simples e pode ser facilmente repetida. Ela consiste de uma bola com uma massa conhecida, uma mola, um suporte com uma escala de comprimento, um dispositivo para gravar partes da oscilação, um suporte para o dispositivo, e um cronômetro que nos dá o tempo real no vídeo em câmera lenta gerado.

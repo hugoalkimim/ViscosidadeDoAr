@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.26)  2 SEP 2020 18:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.26)  2 SEP 2020 19:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -533,55 +533,59 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--60
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./img/viscosidade.png>]
-<./img/bolaTenis.jpg, id=65, 1798.72pt x 2754.29pt>
+<./img/bolaTenis.jpg, id=67, 1798.72pt x 2754.29pt>
 File: ./img/bolaTenis.jpg Graphic file (type jpg)
 <use ./img/bolaTenis.jpg>
-Package pdftex.def Info: ./img/bolaTenis.jpg  used on input line 102.
+Package pdftex.def Info: ./img/bolaTenis.jpg  used on input line 107.
 (pdftex.def)             Requested size: 161.8778pt x 247.8754pt.
-<./img/bolaMetal.png, id=66, 516.42938pt x 722.7pt>
+<./img/bolaMetal.png, id=68, 516.42938pt x 722.7pt>
 File: ./img/bolaMetal.png Graphic file (type png)
 <use ./img/bolaMetal.png>
-Package pdftex.def Info: ./img/bolaMetal.png  used on input line 108.
+Package pdftex.def Info: ./img/bolaMetal.png  used on input line 113.
 (pdftex.def)             Requested size: 154.93001pt x 216.81166pt.
 
 [2 <./img/bolaTenis.jpg> <./img/bolaMetal.png>]
-<./img/quadros.png, id=85, 500.87125pt x 412.54124pt>
+<./img/quadros.png, id=88, 500.87125pt x 412.54124pt>
 File: ./img/quadros.png Graphic file (type png)
 <use ./img/quadros.png>
-Package pdftex.def Info: ./img/quadros.png  used on input line 120.
+Package pdftex.def Info: ./img/quadros.png  used on input line 125.
 (pdftex.def)             Requested size: 200.34494pt x 165.01357pt.
-<./img/m1.png, id=86, 849.4134pt x 458.6736pt>
+<./img/m1.png, id=89, 849.4134pt x 458.6736pt>
 File: ./img/m1.png Graphic file (type png)
 <use ./img/m1.png>
-Package pdftex.def Info: ./img/m1.png  used on input line 126.
+Package pdftex.def Info: ./img/m1.png  used on input line 131.
 (pdftex.def)             Requested size: 254.82599pt x 137.60313pt.
-<./img/m2.png, id=87, 849.4134pt x 458.6736pt>
+<./img/m2.png, id=90, 849.4134pt x 458.6736pt>
 File: ./img/m2.png Graphic file (type png)
 <use ./img/m2.png>
-Package pdftex.def Info: ./img/m2.png  used on input line 132.
+Package pdftex.def Info: ./img/m2.png  used on input line 137.
 (pdftex.def)             Requested size: 254.82599pt x 137.60313pt.
-<./img/m3.png, id=88, 852.3042pt x 458.6736pt>
+<./img/m3.png, id=91, 852.3042pt x 458.6736pt>
 File: ./img/m3.png Graphic file (type png)
 <use ./img/m3.png>
-Package pdftex.def Info: ./img/m3.png  used on input line 138.
+Package pdftex.def Info: ./img/m3.png  used on input line 143.
 (pdftex.def)             Requested size: 255.69324pt x 137.60313pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 148.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 153.
  [3 <./img/quadros.png> <./img/m1.png (PNG copy)> <./img/m2.png (PNG copy)> <./
 img/m3.png (PNG copy)>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 148.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 153.
 
 (./ViscosidadeDoAr.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 148.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 148.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 153.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 153.
 Package rerunfilecheck Info: File `ViscosidadeDoAr.out' has not changed.
 (rerunfilecheck)             Checksum: E7DC2F853D4383AA8B2C65FECAD74347;288.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 148.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 153.
  ) 
 Here is how much of TeX's memory you used:
- 8496 strings out of 483140
- 128332 string characters out of 5965151
- 398543 words of memory out of 5000000
- 23338 multiletter control sequences out of 15000+600000
+ 8498 strings out of 483140
+ 128357 string characters out of 5965151
+ 400576 words of memory out of 5000000
+ 23339 multiletter control sequences out of 15000+600000
  540058 words of font info for 56 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  41i,18n,42p,594b,553s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -595,11 +599,12 @@ t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts
 public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-ti12.pfb>
-Output written on ViscosidadeDoAr.pdf (3 pages, 2401402 bytes).
+ti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msa
+m10.pfb>
+Output written on ViscosidadeDoAr.pdf (3 pages, 2409546 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
- 113 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
+ 147 PDF objects out of 1000 (max. 8388607)
+ 119 compressed objects within 2 object streams
+ 28 named destinations out of 1000 (max. 500000)
  84 words of extra memory for PDF output out of 10000 (max. 10000000)
 

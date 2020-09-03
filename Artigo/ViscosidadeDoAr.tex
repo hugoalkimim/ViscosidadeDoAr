@@ -65,7 +65,7 @@
 				\ddot{x} + 2 \gamma \dot{x} + \omega_0^2 x = 0
 			\end{equation}
 			em que as constantes são dadas por
-			\begin{equation}
+			\begin{equation} \label{eq:constantes-stokes}
 				\omega_0^2 = \frac{k}{m} \qquad \gamma = \frac{3 \pi \eta r}{m}
 			\end{equation}
 			\par Portanto, quando $\omega_0 > \gamma$ (caso de sub-amortecimento), a solução é
@@ -86,21 +86,21 @@
 				x = A \, e^{- \gamma t} \, \cos (\omega t + \phi)
 			\end{equation}
 			\par Todavia, agora as constantes são determinadas por
-			\begin{equation} \label{eq:constantes} \begin{split}
+			\begin{equation} \label{eq:constantes-landau} \begin{split}
 				\omega_0^2 = \frac{k}{f_2 3 \pi r^2 \left(1 + \frac{2 r}{9 \delta} \right) + m} \\
 				\gamma = \frac{3 \pi \eta r \left(1+ \frac{r}{\delta} \right)}{f_1 \left[ f_2 3 \pi r^2 \left(1+\frac{2 r}{9 \delta} \right) \rho \delta + m \right]}
 			\end{split} \end{equation}
 			em que $f_1$ e $f_2$ são coeficientes semi-empíricos.
 			\par Neste artigo, fazemos uso somente dos pontos máximos da oscilação (ou seja, das amplitudes). Com isso, a equação \hyperref[eq:posicao]{\ref{eq:posicao}} pode ser reescrita da seguinte forma:
-			\begin{equation}
+			\begin{equation} \label{eq:amplitudes}
 				A = A_0 e^{- \gamma t} \quad \therefore \quad \ln A = - \gamma t + \ln A_0
 			\end{equation}
 			em que $A$ é a amplitude em função do tempo e $A_0$ é a amplitude inicial.
 			
 		\section{Experimento} \label{sec:experimento}
 			\par A configuração experimental é simples e pode ser facilmente repetida. Ela consiste de uma bola com uma massa conhecida, uma mola, um suporte com uma escala de comprimento, um dispositivo para gravar a oscilação, um suporte para o dispositivo, e um cronômetro.
-			\par Inicialmente, fizemos o experimento usando uma bola de tênis (\hyperref[img:tenis]{Figura 1}) e filmamos toda a oscilação. Após analisar os dados dessa configuração, optamos por utilizar um objeto de estudo com menor rugosidade superficial, visando adequar nosso experimento aos modelos matemáticos utilizados. Além disso, optamos por gravar trechos mais curtos, a fim de obter vídeos que representem a oscilação em cada minuto, facilitando a análise de dados.
-			\par Portanto, fizemos um segundo experimento usando uma bola de metal (figura \hyperref[img:metal]{Figura 2}) e filmamos entre 5 e 10 segundos em intervalos de 1 minuto.
+			\par Inicialmente, fizemos o experimento usando uma bola de tênis (\hyperref[img:tenis]{Figura 1}) e filmamos toda a oscilação. Após analisar os dados dessa configuração, optamos por utilizar um objeto de estudo com menor rugosidade superficial, visando a adequar nosso experimento aos modelos matemáticos utilizados. Além disso, optamos por gravar trechos mais curtos, a fim de obter vídeos que representem a oscilação em cada minuto, facilitando a análise de dados.
+			\par Portanto, fizemos um segundo experimento usando uma bola de metal (\hyperref[img:metal]{Figura 2}) e filmamos entre 5 e 10 segundos em intervalos de 1 minuto.
 			\par Por fim, uma terceira configuração foi estabelecida, em que o movimento amortecido de uma bola de metal (similar à \hyperref[img:metal]{Figura 2}) foi gravado num período de 30 minutos sem interrupções.
 			\begin{figure}[H] \label{img:tenis}
 				\centering
@@ -116,10 +116,10 @@
 			\end{figure}
 			
 		\section{Análise de Dados} \label{sec:analise}
-			\par Com os dados da segunda configuração, fizemos três análises para determinar o valor da viscosidade do ar: utilizando a maior amplitude de cada vídeo curto e fazendo a média aritmética das amplitudes máxima e mínima em cada vídeo.
-			\par No primeiro método, analisamos cada gravação -- quadro a quadro --, com o auxílio de um editor de vídeo (\hyperref[img:quadros]{Figura 3}), para encontrar a maior amplitude atingida e o correspondente tempo no cronômetro em tela. Os dados coletados podem ser vistos na \hyperref[img:m1]{Figura 4}. Com isso, conseguimos encontrar o valor da viscosidade do ar como $2.78 \cdot 10^{-5} \, Pa \cdot s$ (ignorando a incerteza). Apesar de esse método ter sido efetivo, ele poderia ser mais preciso, motivo pelo qual fizemos a segunda análise.
-			\par No segundo método, usamos o programa \textit{Tracker -- video analysis and modelling tool --} para conseguir mais posições em cada vídeo e depois calcular a média aritmética das amplitudes máxima e mínima atingidas nesse intervalo. Os dados coletados podem ser vistos na \hyperref[img:m2]{Figura 5}. Como consequência dessa nova análise, conseguimos determinar o valor da viscosidade do ar como $2.02 \cdot 10^{-5} \, Pa \cdot s$ (ignorando a incerteza).
-			\par Com os dados da terceira configuração, um algoritmo escrito em MatLab (disponível \href{https://github.com/hugoalkimim/ViscosidadeDoAr/tree/master/Algoritmo}{aqui}) foi utilizado para encontrar os máximos e, consequentemente, encontrar a constante $\gamma$ (equação \hyperref[eq:constantes]{\ref{eq:constantes}}). Os dados coletados podem ser vistos na \hyperref[img:m3]{Figura 6}. Com isso, conseguimos determinar o valor da viscosidade do ar como $\#.\#\# \cdot 10^{-5} \, Pa \cdot s$ (ignorando a incerteza).
+			\par Com os dados da segunda configuração, fizemos duas análises para determinar o valor da viscosidade do ar: utilizando a maior amplitude de cada vídeo e fazendo a média aritmética das amplitudes atingidas em cada trecho.
+			\par No primeiro método, analisamos cada gravação -- quadro a quadro --, com o auxílio de um editor de vídeo (\hyperref[img:quadros]{Figura 3}), para encontrar a maior amplitude atingida e o correspondente tempo no cronômetro em tela. Os dados coletados podem ser vistos na \hyperref[img:m1]{Figura 4}. Usando a relação \hyperref[eq:amplitudes]{\ref{eq:amplitudes}}, temos que a constante $\gamma \simeq 2.761 \cdot 10^{-3}$. Com isso, a viscosidade foi calculada usando as constantes mostradas na equação \hyperref[eq:constantes-stokes]{\ref{eq:constantes-stokes}} e na equação \hyperref[eq:constantes-landau]{\ref{eq:constantes-landau}}, tendo como resultados -- respectivamente -- $\#.\#\#\# \cdot 10^{-\#} \, Pa \cdot s$ e $\#.\#\#\# \cdot 10^{-\#} \, Pa \cdot s$.
+			\par No segundo método, usamos o programa \textit{Tracker -- video analysis and modelling tool --} para conseguir mais posições em cada vídeo e depois calcular a média aritmética das amplitudes atingidas nesse intervalo. Os dados coletados podem ser vistos na \hyperref[img:m2]{Figura 5}. Usando a relação \hyperref[eq:amplitudes]{\ref{eq:amplitudes}}, temos que a constante $\gamma \simeq 2.313 \cdot 10^{-3}$. Com isso, a viscosidade foi calculada usando as constantes mostradas na equação \hyperref[eq:constantes-stokes]{\ref{eq:constantes-stokes}} e na equação \hyperref[eq:constantes-landau]{\ref{eq:constantes-landau}}, tendo como resultados -- respectivamente -- $\#.\#\#\# \cdot 10^{-\#} \, Pa \cdot s$ e $\#.\#\#\# \cdot 10^{-\#} \, Pa \cdot s$.
+			\par Além disso, com os dados da terceira configuração, um algoritmo escrito em MatLab (disponível \href{https://github.com/hugoalkimim/ViscosidadeDoAr/tree/master/Algoritmo}{aqui}) foi utilizado para encontrar os máximos e, consequentemente, encontrar a constante $\gamma \simeq 2.367 \cdot 10^{-4}$ (usando a relação \hyperref[eq:amplitudes]{\ref{eq:amplitudes}}). Os dados coletados podem ser vistos na \hyperref[img:m3]{Figura 6}. Com isso, a viscosidade foi calculada usando as constantes mostradas na equação \hyperref[eq:constantes-stokes]{\ref{eq:constantes-stokes}} e na equação \hyperref[eq:constantes-landau]{\ref{eq:constantes-landau}}, tendo como resultados -- respectivamente -- $\#.\#\#\# \cdot 10^{-\#} \, Pa \cdot s$ e $\#.\#\#\# \cdot 10^{-\#} \, Pa \cdot s$.
 			\begin{figure}[H] \label{img:quadros}
 				\centering
 				\includegraphics[scale=0.4]{./img/quadros.png}

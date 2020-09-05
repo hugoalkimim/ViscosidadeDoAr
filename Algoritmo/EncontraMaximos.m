@@ -16,9 +16,9 @@ for i = 3:tamanhoVetor
     if(alturaEsfera(i - 1) > alturaEsfera(i) && subindo == 1)
         subindo = 0;
         maximos(qntMaximos) = alturaEsfera(i - 1); % Maximos são as amplitudes locais
-        tempo(qntMaximos) = (i - 1) / 30; % Tempo associado a cada amplitude local
+        tempoMaximos(qntMaximos) = tempo(i - 1); % Tempo associado a cada amplitude local
         if qntMaximos > 1
-            tempoDif(qntMaximos - 1) = tempo(qntMaximos) - tempo(qntMaximos - 1);
+            tempoDif(qntMaximos - 1) = tempoMaximos(qntMaximos) - tempoMaximos(qntMaximos - 1);
         end
         qntMaximos = qntMaximos + 1;
     end

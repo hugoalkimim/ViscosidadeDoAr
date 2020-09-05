@@ -90,6 +90,7 @@ while hasFrame(v)
     writeVideo(saida, vidFrame);
     
     alturaEmPixels(qntFrames) = maiori; % Altura da esferaem pixels
+    tempo(qntFrames) = v.currentTime;
     % Calcula a altura da esfera de acordo com a linha contida na variável
     % 'maiori'
     alturaEsfera(qntFrames) = 90 + (1598 - max(maiori, 1183)) / 51.5 * 10;
